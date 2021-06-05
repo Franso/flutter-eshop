@@ -5,6 +5,7 @@ import 'package:uishop/size_config.dart';
 // create splash screen stateless widget
 class SplashScreen extends StatelessWidget {
   // const SplashScreen({Key? key}) : super(key: key);
+  static String routeName = "/splash";
 
   @override
   Widget build(BuildContext context) {
