@@ -6,6 +6,7 @@ ThemeData theme() {
   return ThemeData(
     // primarySwatch: Colors.blue,
     scaffoldBackgroundColor: Colors.white,
+    fontFamily: "Muli",
     appBarTheme: appBarTheme(),
     textTheme: textTheme(),
     inputDecorationTheme: inputDecorationTheme(),

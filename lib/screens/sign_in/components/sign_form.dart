@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:uishop/components/custom_surfix_icon.dart';
 import 'package:uishop/components/default_button.dart';
 import 'package:uishop/components/form_error.dart';
 import '../../../constants.dart';
@@ -99,8 +100,11 @@ class _SignFormState extends State<SignForm> {
           labelText: "Password",
           hintText: "Enter your password",
           floatingLabelBehavior: FloatingLabelBehavior.always,
-          suffixIcon: Icon(
-            Icons.lock,
+          // suffixIcon: Icon(
+          //   Icons.lock,
+          // )),
+          suffixIcon: CustomSurfixIcon(
+            svgIcon: "assets/icons/Lock.svg",
           )),
     );
   }
@@ -139,7 +143,9 @@ class _SignFormState extends State<SignForm> {
           labelText: "Email",
           hintText: "Enter your email",
           floatingLabelBehavior: FloatingLabelBehavior.always,
-          suffixIcon: Icon(Icons.mail_outline)),
+          suffixIcon: CustomSurfixIcon(
+            svgIcon: "assets/icons/Mail.svg",
+          )),
     );
   }
 }
