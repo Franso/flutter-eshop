@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:uishop/size_config.dart';
+// import 'package:uishop/size_config.dart';
 
 class CustomSurfixIcon extends StatelessWidget {
   const CustomSurfixIcon({Key key, @required this.svgIcon}) : super(key: key);
@@ -11,13 +11,13 @@ class CustomSurfixIcon extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.fromLTRB(
         0,
-        getProportionateScreenHWidth(20),
-        getProportionateScreenHWidth(20),
-        getProportionateScreenHWidth(20),
+        20,
+        20,
+        20,
       ),
       child: SvgPicture.asset(
         svgIcon,
-        height: getProportionateScreenHWidth(18),
+        height: 18,
       ),
     );
   }
