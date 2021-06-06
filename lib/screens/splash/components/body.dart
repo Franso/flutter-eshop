@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:uishop/components/default_button.dart';
 import 'package:uishop/constants.dart';
+import 'package:uishop/screens/sign_in/sign_in_screen.dart';
 import 'package:uishop/screens/splash/components/splash_content.dart';
 import 'package:uishop/size_config.dart';
 
@@ -66,10 +67,12 @@ class _BodyState extends State<Body> {
                         (index) => buildDot(index: index),
                       ),
                     ),
-                    Spacer(flex: 3),
+                    Spacer(flex: 2),
                     DefaultButton(
                       text: "Continue",
-                      press: () {},
+                      press: () {
+                        Navigator.pushNamed(context, SignInScreen.routeName);
+                      },
                     ),
                     Spacer(),
                   ],
